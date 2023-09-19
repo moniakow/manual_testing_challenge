@@ -32,3 +32,18 @@
     * Tłumaczenie zakładki "shortcuts" (//div[2]/div/div/h2) po polsku tłumaczy się na "Linki pomocnicze", uważam, że jest to nieprawidłowe tłumaczenie (chociaż to zależy jaki jest zamysł tej zakładki, opisałam już ten problem w podpunkcie wyżej).
     * Klikając na ostatnio dodany/aktualizowany mecz/zawodnik/raport w sekcji "Activity" (//div[3]/div[3]/div) mamy możlwość edycji danego rekordu, a nie tylko wyświetlenie szczegółów, nie wydaje mi się to poprawne.
     * "Mecze" i "Raporty" nie wyświetlają się w menu po lewej stronie (jedynie po kliknięciu ostatnio dodanego/zaktualizowanego zawodnika/meczu/raportu z sekcji "Activity")
+
+---
+# TASK 2
+
+## Subtask 1 : Test Cases based on User Stories
+https://docs.google.com/spreadsheets/d/1ImCItmukbeS-AvDGWTX-eeJze1goA_HZH4wVOpHmUdE/edit?usp=sharing
+
+## Subtask 2: Test Cases 
+https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zTXME/edit?usp=sharing
+
+## Subtask 3: Why do we write test cases?
+* We write test cases to document that new development works as requested by the client.
+* To manage testing. Test cases can be distributed among the team. The person performing the test does not need to be the one who designed the test, but with a test case should be able to easily perform all required tests.
+* To be able to prepare a detailed test report.
+* Might help us to think ahead where possible bugs could appear.

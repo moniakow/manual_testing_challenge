@@ -47,3 +47,12 @@ https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zT
 * To manage testing. Test cases can be distributed among the team. The person performing the test does not need to be the one who designed the test, but with a test case should be able to easily perform all required tests.
 * To be able to prepare a detailed test report.
 * Might help us to think ahead where possible bugs could appear.
+
+  ---
+  # TASK 3
+
+  ## Subtask : Bug Report
+  https://drive.google.com/drive/folders/14g2Hs4oCHaIr5Y1YTQ2IHVJleJ4EKuBb?usp=sharing
+
+  ## Subtask : Test Report
+  https://docs.google.com/presentation/d/1WOg5Z-CRFK7VaRjeRKEy8RWHhaLQMf5kN1PSM1Q4QiA/edit?usp=sharing

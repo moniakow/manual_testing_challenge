@@ -49,10 +49,10 @@ https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zT
 * Might help us to think ahead where possible bugs could appear.
 
   ---
-  # TASK 3
+# TASK 3
 
-  ## Subtask : Bug Report
+## Subtask : Bug Report
   https://drive.google.com/drive/folders/14g2Hs4oCHaIr5Y1YTQ2IHVJleJ4EKuBb?usp=sharing
 
-  ## Subtask : Test Report
+## Subtask : Test Report
   https://docs.google.com/presentation/d/1WOg5Z-CRFK7VaRjeRKEy8RWHhaLQMf5kN1PSM1Q4QiA/edit?usp=sharing

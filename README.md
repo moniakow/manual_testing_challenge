@@ -56,3 +56,24 @@ https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zT
 
 ## Subtask : Test Report
   https://docs.google.com/presentation/d/1WOg5Z-CRFK7VaRjeRKEy8RWHhaLQMf5kN1PSM1Q4QiA/edit?usp=sharing
+
+---
+# TASK 4 
+
+## Subtask: Testowanie aplikacji mobilnych - Bug Report
+   https://docs.google.com/spreadsheets/d/1RrG41au7ZqUI3FL6aqlcD-TpXslwPCs1QzaTiLuHscU/edit?usp=sharing
+
+## Subtask: Q&A 
+   * **Do czego służy ta aplikacja? Jaki jest cel tej aplikacji?**
+      * Aplikacja umożliwia udostępnienie ogłoszeń lokalnych (sprzedaż, oddam za darmo, wynajmę, dam pracę, itd.) oraz wyszukiwanie takich samych ogłoszeń. Aplikacja umożliwia zalogowanie do platformy, udostępnianie ogłoszeń, wgląd do statystyk wystawionego ogłoszenia, wyszukiwanie ogłoszeń w wybranych miejscach, kontakt z wystawiającym, zakup przez ptalformę, płatność. Ustawianie alertów na dane wyszukiwania. 
+   * **Kto ma być użytkownikiem końcowym aplikacji?**
+      * Ludzie, którzy szukają wszelkich ogłoszeń lokalnych lub chcą coś ogłosić.
+        
+   * **Czy według Ciebie aplikacja jest user friendly? (Przyjazna dla użytkownika- np. wchodzisz do aplikacji i szybko łapiesz do czego służą przyciski. Poczytaj na ten temat w internecie- co to znaczy, że aplikacja jest przyjazna dla użytkownika)**
+        * Uważam, że aplikacja jest bardzo przyjazna użytkownikowi. Menu znajduje się na dole, blisko kciuka, ikony są przejrzyste. Łatwo się w niej odnaleźć.
+
+   * **Jak byś usprawnił aplikację? Co byś w niej poprawił. Czy masz jakiś pomysł na dodatkową funkcjonalność?**
+        * W aplikacji poprawiłabym zgłoszone bugi. :) z możliwych dodatkowych funkcji, fajnie by było jakby była jakaś strefa NGO: gdzie lokalne fundacje i stowarzyszenia mogłyby wrzucać zapotrzebowanie na darowizny materialne / wsparcie finansowe.  Połączenie "szukam/oddam". Jeśli ktoś oddaje jakiś przedmiot za darmo, op wstawieniu ogłoszenia aplikacja by mogła szukać ogłoszeń "szukam" które by się pokrywały i umożliwić i zautomatyzować pozbycie się rzeczy za darmo. :)
+
+   * **Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?**
+         * testowanie aplikacji natywnej skupia się na testowaniu funkcjonalności danej aplikacji na konkretnym rodzaju urządzenia. Możemy do tego użyć prawdziwego urządzenia mobilnego, bądź skorzystać ze specjalnego emulatora.  

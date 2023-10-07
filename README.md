@@ -77,3 +77,72 @@ https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zT
 
    * **Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?**
          * testowanie aplikacji natywnej skupia się na testowaniu funkcjonalności danej aplikacji na konkretnym rodzaju urządzenia. Możemy do tego użyć prawdziwego urządzenia mobilnego, bądź skorzystać ze specjalnego emulatora.  
+
+---
+# TASK 5 - SQL 1
+## Subtask 3 
+
+* **Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.**
+    
+   * SELECT * FROM `actors` order by name  
+       
+   ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/a5ee5011-a6a7-49b7-a480-b6d4d97f9041)  
+
+* **Wyświetl film, który powstał w 2019 roku.**
+
+  SELECT * FROM `movies` WHERE year_of_production=2019
+
+   ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/1e9a1b2e-cd73-4695-a377-d0d0e7cafa3c)  
+
+* **Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem.**
+
+  SELECT * FROM `movies` WHERE `year_of_production` BETWEEN 1990 and 1999
+
+    ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/89568c3e-c088-44a9-99c1-b3c017435c1a)  
+
+* **Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$**
+
+  SELECT `title`,`price` FROM `movies` WHERE `price` <7;
+
+   ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/d4055a20-0529-4738-9f86-4d79eb7ff42d)
+
+* **Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN.**
+
+   SELECT * FROM actors where actor_id>3 and actor_id<8;
+
+    ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/6ba3b00f-57e9-4e89-994d-4cfa96613ba3)
+  
+* **Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny.**
+
+    SELECT * FROM `customers` where customer_id=2 or customer_id=4 OR customer_id=6;
+
+     ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/26bd794d-ae1c-4407-b63d-1b1fefdacc88)
+    
+* **Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN.**
+
+    SELECT * FROM `customers` WHERE customer_id IN (1,3,5)
+
+    ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/8b87c565-d76b-435e-92ea-5b0f0cfaa8a2)
+  
+* **Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”.**
+
+    SELECT * FROM actors WHERE name like 'an%'
+
+    ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/de2e4799-a10a-409e-84a3-bd00ed781033)
+    
+* **Wyświetl dane klienta, który nie ma podanego adresu email.**
+
+    SELECT * FROM `customers` WHERE email IS null  
+
+     ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/7ef34cde-9153-4b6c-9bf2-e6e89ae6cd15)
+
+* **Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.**
+
+    SELECT * FROM `movies` WHERE price>9 AND movie_id>1 AND movie_id<9;
+
+    ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/1fe2e350-16b6-4062-9146-c42e63880100)
+  
+
+    
+
+    

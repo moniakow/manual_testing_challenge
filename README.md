@@ -142,7 +142,56 @@ https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zT
 
     ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/1fe2e350-16b6-4062-9146-c42e63880100)
   
+---
+# TASK 6 
+## Subtask 1 - SQL 2
 
+*  **Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój błąd.**
+     
+   ```
+   UPDATE customers
+   SET surname = 'Miler'
+   WHERE surname = 'Muler'
+   ```
+
+   ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/d36ecba5-1812-41b3-8bcf-0aca0622b2f0)
+
+
+* **Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej.**
+
+   ```
+   SELECT customers.name, customers.email, sale.movie_id 
+   FROM `customers` 
+   LEFT JOIN sale 
+   ON customers.customer_id = sale.customer_id 
+   WHERE movie_id = 4 
+
+![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/7d669523-d86d-4c92-8d1f-01c2a7958a82)  
+
+* **Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com**
+
+   ```
+   UPDATE customers
+   SET email = 'pati@mail.com'
+   WHERE surname = 'Komor'
+   SELECT * FROM customers  
+
+![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/583bc674-400f-42a0-88ca-1d8cff4ba11c)  
+
+* **Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia).**
+  
+* **W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery    nazwiska. Np. Natalie Pilling → Nag**
+  
+* **Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.**
+  
+* **Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)**
+  
+* **Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).**
+  
+* **Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał**
+  
+* **A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa**
+  
     
 
     

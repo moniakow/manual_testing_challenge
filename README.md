@@ -219,11 +219,30 @@ https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zT
   ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/90e87e80-197b-4244-a8cb-889c19724b08)
 
 * **Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).**
+   ```
+   UPDATE movies
+   SET price = price + 2.5 WHERE year_of_production > 2000
+   ```
+ ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/92f0eb6e-4df8-4a14-8d28-c6573d1080cb)
+ ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/f086d125-30a9-460d-b192-95f3d469e91a)
+
   
 * **Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał**
+
+   ```
+   SELECT actors.name, actors.surname, movies.title 
+   FROM ((cast INNER JOIN actors ON cast.actor_id = actors.actor_id) INNER JOIN movies ON cast.movie_id = movies.movie_id) WHERE movies.movie_id = 4
+  ```
+   ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/bb0391c4-7a05-46a3-8fd4-2070b47dcf27)
   
 * **A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa**
   
+  ```
+   INSERT INTO customers (customer_id, name, surname, email, pseudonym)
+   VALUES ('7', 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa')
+  ```
+  ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/3830c731-b01c-43e5-8a8e-feb6a388bf7d)
+
     
 
     

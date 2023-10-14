@@ -179,13 +179,45 @@ https://docs.google.com/spreadsheets/d/1R0_Itc__Yf_gVgWW2AyZdKfsSYxe1bzkEYqts5zT
 ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/583bc674-400f-42a0-88ca-1d8cff4ba11c)  
 
 * **Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia).**
-  
+
+    ```
+   SELECT customers.name, customers.surname,sale.sale_date, movies.title
+   FROM ((customers INNER JOIN sale on customers.customer_id = sale.customer_id) INNER JOIN movies ON movies.movie_id = sale.movie_id)
+    ```
+  ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/75f7fca0-002c-4412-9e90-e11b024d1075)
+
 * **W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery    nazwiska. Np. Natalie Pilling → Nag**
+    
+  ```
+   ALTER TABLE customers
+   ADD COLUMN pseudonym varchar(3)
+   ***
+   UPDATE customers 
+   SET pseudo2 = CONCAT(LEFT(name, 2), RIGHT(surname,1))  
+  ```
+  ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/ebee26b1-5334-40d2-a10d-ed0f10a22722)
+
   
 * **Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.**
   
-* **Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)**
+  ```
+  SELECT DISTINCT title
+  FROM movies INNER JOIN sale ON movies.movie_id = sale.movie_id
+  ```
+  ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/ce48e2f2-cd91-4937-97b0-9108fa25ca73)
+
   
+* **Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)**
+
+  ```
+  SELECT name FROM customers 
+  UNION
+  SELECT name FROM actors
+  ORDER BY name ASC;
+  ```
+
+  ![image](https://github.com/moniakow/manual_testing_challenge/assets/18737946/90e87e80-197b-4244-a8cb-889c19724b08)
+
 * **Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).**
   
 * **Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał**
